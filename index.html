@@ -3,10 +3,12 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+    <title>analytics Page</title>
 </head>
 <body>
     <header>
+        <h1>analytics page</h1>
         <nav>
             <ul>
                 <li><a href="#">Home</a></li>
@@ -14,5 +16,33 @@
             </ul>
         </nav>
     </header>
+    <main>
+    <section id="analytics-cards" class="cards-container">
+        <div class="card shadowed" id="lessson-card">
+        <h2>lesson completed</h2>
+        <div class="progress-bar" data-value="75">
+            <div class="progress" style="width: 75%;"></div>
+        </div>
+        <p><strong>75%</strong></p>
+        <button class="modal-btn" onclick="showModal('lesson-modal')">Details</button>
+        </div>
+        <div class="card shadowed" id="hours-card">
+            <h2>Hours spent</h2>
+            <div class="progress-bar" data-value="34">
+             <div class="progress" style="width: 34%;"></div>
+            </div>
+            <p><strong>34%</strong></p>
+            <button class="modal-btn" onclick="showModal('hours-modal')">Details</button>
+         </div>
+        <div class="card shadowed" id="projects-card">
+           <h2>Hours spent</h2>
+           <div class="progress-bar" data-value="50">
+            <div class="progress" style="width: 50%;"></div>
+           </div>
+           <p><strong>50%</strong></p>
+           <button class="modal-btn" onclick="showModal('projects-modal')">Details</button>
+        </div>
+    </section>
+    </main>
 </body>
 </html>
